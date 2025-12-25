@@ -23,33 +23,6 @@ DRAM read/write controller FSM in VHDL with post-route + oscilloscope timing ver
 
 ---
 
-## Suggested repo layout
-
-```
-.
-├─ src/
-│  ├─ readrcmd.vhd          # Task 1: read cycle controller
-│  ├─ writercmd.vhd         # Task 2: write cycle controller (if you split it)
-│  └─ rwcmd.vhd             # Task 3: integrated read+write controller
-├─ sim/
-│  ├─ task1_forces.tcl
-│  ├─ task2_forces.tcl
-│  └─ task3_forces.tcl
-├─ constraints/
-│  ├─ task1.xdc
-│  ├─ task2.xdc
-│  └─ task3.xdc
-├─ assets/
-│  ├─ task1_postroute_timing.png
-│  ├─ task1_project_summary_and_scope.png
-│  ├─ task2_postroute_and_summary.png
-│  ├─ task2_scope.png
-│  ├─ task3_postroute_and_summary.png
-│  └─ task3_scope_and_schematic.png
-└─ report/
-   └─ ECE 4525 Lab 7 Report.pdf
-```
-
 ---
 
 ## Signals (what the controller drives)
